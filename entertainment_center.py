@@ -32,4 +32,5 @@ chef = media.Movie("Chef",
                      "https://www.youtube.com/watch?v=L3OkPRRptgQ")
 
 movies = [toy_stoty, avatar, matrix, school_of_rock, midnight_in_paris, chef]
-fresh_tomatoes.open_movies_page(movies)
+print(media.Movie.__module__)
+#fresh_tomatoes.open_movies_page(movies)
