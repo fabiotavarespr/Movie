@@ -6,10 +6,14 @@
     <title>Gourmet Movies</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+        href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script
+        src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js">
+    </script>
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
@@ -58,16 +62,24 @@
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
+        $(document).
+            on('click',
+                '.hanging-close, .modal-backdrop, .modal',
+                function (event) {
+            // Remove the src so the player itself
+            //  gets removed, as this is the only
             // reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            var sourceUrl = 'http://www.youtube.com/embed/'
+            + trailerYouTubeId
+            + '?autoplay=1&html5=1';
+            $("#trailer-video-container")
+                .empty()
+                .append($("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
@@ -88,8 +100,10 @@
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          <a href="#" class="hanging-close"
+            data-dismiss="modal" aria-hidden="true">
+            <img
+                 src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -109,34 +123,52 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="uj7aSMpQSeI" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/71hnd8cRvPL._SL1500.jpg" alt="Toast" width="220" height="342">
-    <h2>Toast</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="uj7aSMpQSeI"
+    data-toggle="modal" data-target="#trailer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/71hnd8cRvPL._SL1500.jpg"
+            alt="Toast" width="220" height="342">
+        <h2>Toast</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="L3OkPRRptgQ" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/b/b8/Chef_2014.jpg" alt="Chef" width="220" height="342">
-    <h2>Chef</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="L3OkPRRptgQ"
+    data-toggle="modal" data-target="#trailer">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b8/Chef_2014.jpg"
+            alt="Chef" width="220" height="342">
+        <h2>Chef</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="qqQICUzdKbE" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Julie_and_julia.jpg" alt="Julie & Julia" width="220" height="342">
-    <h2>Julie & Julia</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="qqQICUzdKbE"
+    data-toggle="modal" data-target="#trailer">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Julie_and_julia.jpg"
+            alt="Julie & Julia" width="220" height="342">
+        <h2>Julie & Julia</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="HXaff0PpszM" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Burnt_Poster_Updated.jpg" alt="Burnt" width="220" height="342">
-    <h2>Burnt</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="HXaff0PpszM"
+    data-toggle="modal" data-target="#trailer">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Burnt_Poster_Updated.jpg"
+            alt="Burnt" width="220" height="342">
+        <h2>Burnt</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Hi1jxRanimU" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Jiro_sushi_poster.jpg" alt="Jiro Dreams of Sushi" width="220" height="342">
-    <h2>Jiro Dreams of Sushi</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="Hi1jxRanimU"
+    data-toggle="modal" data-target="#trailer">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Jiro_sushi_poster.jpg"
+            alt="Jiro Dreams of Sushi" width="220" height="342">
+        <h2>Jiro Dreams of Sushi</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PeFGdSrFTUw" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg" alt="Ratatouille" width="220" height="342">
-    <h2>Ratatouille</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="PeFGdSrFTUw"
+    data-toggle="modal" data-target="#trailer">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg"
+            alt="Ratatouille" width="220" height="342">
+        <h2>Ratatouille</h2>
 </div>
 
     </div>

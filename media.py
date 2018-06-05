@@ -1,7 +1,9 @@
 import webbrowser
 
+
 class Video():
     """ This class information about video"""
+
     def __init__(self, title, duration):
         self.title = title
         self.duration = duration
@@ -13,6 +15,7 @@ class Video():
 
 class Movie(Video):
     """ This class information about movies"""
+
     def __init__(self, title, duration, storyline,
                  poster_image, trailer_youtube):
         Video.__init__(self, title, duration)
